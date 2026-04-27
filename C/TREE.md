@@ -129,11 +129,19 @@ ex:
 
 
 
-##### **ARRAY REPRESENTATION:**
+* ##### **ARRAY REPRESENTATION:**
 
-ONLY 
+ONLY complete tree can be implemented using arrays
 
 **\[A, B, C, D, E, F, G, H, I]**
 
 **\[A, B, C, D, E, F, G, , , H, I]**
+
+###### 
+
+* ###### **BINARRY SEARCH TREE:**
+
+&#x09;all the children on left side should be lesser than the root and the right side values should be grater than right.
+
+&#x09;
 
