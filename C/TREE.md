@@ -143,5 +143,103 @@ ONLY complete tree can be implemented using arrays
 
 &#x09;all the children on left side should be lesser than the root and the right side values should be grater than right.
 
-&#x09;
+
+
+
+
+
+
+# **GRAPHS**
+
+Graph is a non linear data structure which is used to represent the relationship between
+
+&#x09;				
+
+\--> Graph terminologies :	  			
+
+* Node/Vertices : Contains actual data. Represented by circles.
+* Edges : Connection between the two nodes/vertices.
+* Adjacent Nodes : Two vertices are called adjacents if they are connected by an edge.
+* degree of a node: 
+* size of a graph: total no of edges in a graph.
+
+
+
+
+
+code is in: "C:\\Data Structure\\C\\tree.cpp"
+
+#### TYPES OF GRAPHS:
+
+1. Directional graph: 
+
+imp: a-->b != b-->a
+
+ex: a----->b
+
+&#x20;          ^
+
+&#x20;          |
+
+&#x20;          |
+
+&#x20;          c
+
+2\. NON-Directional graph: it is also called as bidirectional graph.
+
+
+
+ex:
+
+&#x20;    a----------b
+
+&#x20;               |
+
+&#x20;               |
+
+&#x20;               |
+
+&#x20;               c
+
+3\. weight graphs: in  this graphs has a weights.
+
+
+
+ex:       10
+
+&#x20;   a----------b
+
+&#x20;              |
+
+&#x20;              | 5
+
+&#x20;              |
+
+&#x20;              c
+
+4\. unweighted graphs: the graphs has no weight.
+
+
+
+5\. cyclic graphs: it is a type of graph that contains at least one cycle.
+
+
+
+ex: A<----
+
+&#x20;   |     |
+
+&#x20;   |\_\_\_\_\_|    : even with a single node.
+
+6\. acyclic graph: it is a type of graph it does not contains any loop.
+
+
+
+7\. complete graph: a graph where every pair of vertices are connected.
+
+
+
+
+
+
 
