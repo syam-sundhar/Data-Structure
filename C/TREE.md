@@ -153,14 +153,14 @@ ONLY complete tree can be implemented using arrays
 
 Graph is a non linear data structure which is used to represent the relationship between
 
-&#x09;				
+&#x09;
 
-\--> Graph terminologies :	  			
+\--> Graph terminologies :
 
 * Node/Vertices : Contains actual data. Represented by circles.
 * Edges : Connection between the two nodes/vertices.
 * Adjacent Nodes : Two vertices are called adjacents if they are connected by an edge.
-* degree of a node: 
+* degree of a node:
 * size of a graph: total no of edges in a graph.
 
 
@@ -171,7 +171,7 @@ code is in: "C:\\Data Structure\\C\\tree.cpp"
 
 #### TYPES OF GRAPHS:
 
-1. Directional graph: 
+1. Directional graph:
 
 imp: a-->b != b-->a
 
@@ -239,7 +239,47 @@ ex: A<----
 
 
 
+* #### Graph representation:
 
+##### &#x20;  1. Adjacency matrix:
+
+&#x09;
+
+&#x09;   EX:
+
+&#x09;	1---------2\\
+
+&#x20;               |        /| \\
+
+&#x09;	|	/ |  5
+
+&#x09;	| /-----  | /
+
+&#x20;               3---------4/
+
+
+
+&#x09;1  2  3  4  5
+
+&#x20;      \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+&#x20;    1 |0  1  1  0  0
+
+&#x20;    2 |1  0  1  1  1
+
+&#x20;    3 |1  1  0  1  0
+
+&#x20;    4 |0  1  1  0  1
+
+&#x20;    5 |0  1  0  1  0
+
+
+
+##### &#x20;  2. Adjacency list:
+
+&#x09;	pass;
+
+##### &#x20; 
 
 
 

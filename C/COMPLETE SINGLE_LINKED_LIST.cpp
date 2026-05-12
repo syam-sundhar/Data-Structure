@@ -154,7 +154,7 @@ void deletepos()
 	scanf("%d",&pos);
 	if(head==NULL)
 	{
-		printf("\nLIST IS EMPTY");
+		printf("\nLIST IS EMPTY"); 
 	}
 	else if(pos==1)
 	{

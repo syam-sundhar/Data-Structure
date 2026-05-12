@@ -40,71 +40,6 @@ void display()
         temp=temp->next;
     }while(temp!=head);
 }
-void insert_front()
-{
-	struct node *enode=0;
-    enode=(struct node *)malloc(sizeof(struct node));
-    printf("\nenter newely created node data: ");
-    scanf("%d",&enode->data);
-    enode->next=0;
-    enode->next=head;
-    head=enode;
-    tail->next=head;
-    display();
-    printf("\n %d",tail->next->data);
-}
-void insert_end()
-{
-	struct node *enode=NULL;
-    enode=(struct node *)malloc(sizeof(struct node));
-    printf("\nenter newely created node data: ");
-    scanf("%d",&enode->data);
-    enode->next=NULL;
-    if(head==NULL){
-        head=tail=enode;
-        tail->next=head;
-    }
-    else{
-        tail->next=enode;
-        tail=enode;
-        tail->next=head;
-    }
-    display();
-    printf("\n%d",tail->next->data);
-}
-void insert_pos()
-{
-	int i,pos;
-	printf("\nenter position: ");
-	scanf("%d",&pos);
-	struct node *enode=0;
-	enode=(struct node *)malloc(sizeof(struct node));
-	printf("\nenter newely created data: ");
-	scanf("%d",&enode->data);
-	enode->next=0;
-	if(head==0)
-	{
-		head=tail=enode;
-		tail->next=head;
-	}
-	else if(pos==1)
-	{
-		enode->next=head;
-		head=enode;
-		tail->next=head;
-	}
-	else
-	{
-	for(i=1;i<pos-1;i++)
-	{
-		temp=temp->next;
-	}
-	enode->next=temp->next;
-	temp->next=enode;
-	}
-	display();
-	printf("\n%d",tail->next->data);
-}
 void delete_front()
 {
 	struct node *temp;
@@ -205,47 +140,16 @@ void delete_pos()
     display();
     printf("\n%d",tail->next->data);
 }
-void reverse()
-{
-	struct node *prevnode=tail, *currentnode=head, *nextnode=NULL;
-    if(head==NULL)
-    {
-        printf("\nLIST IS EMPTY");
-    }
-    else if(head==tail)
-    {
-        printf("\n ONLY ONE NODE IS THERE IN THE LIST SO, NO NEED TO PERFORM THE REVERSE");
-    }
-    else
-    {
-        do
-        {
-            nextnode=currentnode->next;
-            currentnode->next=prevnode;
-            prevnode=currentnode;
-            currentnode=nextnode;
-        }while(currentnode!=head);
-        tail=head;
-    head=prevnode;
-    }
-    
-    printf("\nAFTER REVERSING");
-    display();
-    printf("\n%d",tail->next->data);
-}
+
 int main()
 {
     create();
 	printf("\nBEFORE OPERATING ANY OPERATION:");
 	display();
     int choice,ch;
-	printf("\n1. INSERTING NODE AT FRONT");
-	printf("\n2. INSERTING NODE AT END");
-	printf("\n3. INSERTING NODE AT PARTICULAR POSITION");
-	printf("\n4. DELETING NODE AT FRONT");
-	printf("\n5. DELETING NODE AT END");
-	printf("\n6. DELETING NODE AT PARTICULAR POSITION");
-	printf("\n7. REVERSING THE LIST");
+	printf("\n1. DELETING NODE AT FRONT");
+	printf("\n2. DELETING NODE AT END");
+	printf("\n3. DELETING NODE AT PARTICULAR POSITION");
 	while(ch)
 	{
 	printf("\nenter your choice: ");
@@ -253,25 +157,13 @@ int main()
 	switch(choice)
 	{
 		case 1:
-			insert_front();
-			break;
-		case 2:
-			insert_end();
-			break;
-		case 3:
-			insert_pos();
-			break;
-		case 4:
 			delete_front();
 			break;
-		case 5:
+		case 2:
 			delete_end();
 			break;
-		case 6:
+		case 3:
 			delete_pos();
-			break;
-		case 7:
-			reverse();
 			break;
 		default:
 			printf("\nINVALID OPTION");

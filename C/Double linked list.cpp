@@ -105,7 +105,7 @@ void del_last()
 		printf("\nafter delecting the last elenent: ");
 		display();
 	}
-/*void del_pos()
+void del_pos()
 {
 	int pos,i;
 	printf("\nEnter a position to delete the node/value : ");
@@ -164,7 +164,7 @@ void del_last()
 	}
 	
 }
-*/
+
 void reverse()
 {
 	struct node *currentnode=0,*nextnode;
